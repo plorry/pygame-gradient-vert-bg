@@ -1,0 +1,7 @@
+This is a simple pygame class for generating a gradient background. I made it to create a simple "sunset" effect, but it can do any linear gradient from one colour to another.
+
+Simply give it a screen, a rectangle to define its borders, the top colour, the bottom colour, and the number of steps. The gradient will be generated.
+
+A real oversight is that it re-created the gradient with each tick of the game. It's possible it would be more efficient to create the gradient once, save that locally as a static image, and blit that image each tick. But this works.
+
+Limited to two colours (one transition).
